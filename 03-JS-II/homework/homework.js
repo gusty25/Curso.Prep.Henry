@@ -18,13 +18,11 @@ function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
-  if ( edad == 18 ) {
-    return "Allowed"
-  } else if (edad > 18) {
-    return "Allowed"
-  } else if ( edad < 18 ) {
+  if (edad < 18) {
     return "Not allowed"
-  };
+  } else if (edad >= 18) {
+    return "Allowed"
+  }
 }
   
 function conection(status) {
@@ -37,7 +35,7 @@ function conection(status) {
     return "Online";
   } else if (status == 2) {
     return "Away";
-  } else if ("Offline");
+  } return ("Offline");
 }
 
 function saludo(idioma) {
@@ -46,7 +44,14 @@ function saludo(idioma) {
   // Si "idioma" es "mandarin", devuelve "Ni Hao!"
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
-  // Tu código:
+  // Tu código: 
+  if (aleman) {
+    return "Guten Tag!";
+  } else if (idioma = mandarin) {
+    return "Ni Hao!";
+  } else if ( idioma = ingles) {
+    return "Hello!";
+  } return "Hola!"
 }
 
 function colors(color) {
