@@ -142,14 +142,24 @@ function esPrimo(numero) {
   // De lo contrario devuelve "falso"
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
-  // Nota: Los números 0 y 1 NO son considerados números primos
+  // Nota: Los números 0 y 1 NO son considerados números primos 
+    for ( var numero = 0 ; numero <= 100 ; numero++ )
+    if ( numero % 3 === 0) {
+   return true} 
+   else if ( numero % 2 === 0 ) {
+     return false
+   }
 }
 
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-
+if (valor = true) {
+  return "Soy verdadero"
+} else if ( valor = false ) {
+  return "Soy falso"
+}
 }
 
 function tablaDelSeis(){
