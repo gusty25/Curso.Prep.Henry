@@ -132,9 +132,8 @@ function operadoresLogicos(num1, num2, num3) {
   else if (num1 > num2 && num1 > num3) 
   {return "Número 1 es mayor y positivo"}
   else if (num3 > num2, num1 = num3 ++ ) 
-  {return num3} 
-  else return false;
-
+  {return num3}  
+  else {return false};
 }
 
 function esPrimo(numero) {
@@ -143,21 +142,22 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos 
-    for ( var numero = 0 ; numero <= 100 ; numero++ )
-    if ( numero % 3 === 0) {
-   return true} 
-   else if ( numero % 2 === 0 ) {
-     return false
-   }
+  if ( numero == 0) {return false}
+  if (numero == 1) {return false}
+  for (var numero = 0 ; numero <= 100 ; numero ++) 
+  if (numero % 2 === 0) {
+    return false
+  } for ( numero = 0 ; numero <= 100 ; numero++);
+   if (numero % 3 === 0) {return true}
 }
 
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-if (valor = true) {
+if (valor == true) {
   return "Soy verdadero"
-} else if ( valor = false ) {
+}{
   return "Soy falso"
 }
 }
@@ -166,13 +166,14 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
+
   
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
-  //Escribe tu código aquí
-  
+  //Escribe tu código aquí 
+
 }
 
 function doWhile(numero) {
