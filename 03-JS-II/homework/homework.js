@@ -132,8 +132,8 @@ function operadoresLogicos(num1, num2, num3) {
   else if (num1 > num2 && num1 > num3) 
   {return "Número 1 es mayor y positivo"}
   else if (num3 > num2, num1 = num3 ++ ) 
-  {return num3}  
-  else {return false};
+  {return num3}
+   else return false;
 }
 
 function esPrimo(numero) {
@@ -145,10 +145,12 @@ function esPrimo(numero) {
   if ( numero == 0) {return false}
   if (numero == 1) {return false}
   for (var numero = 0 ; numero <= 100 ; numero ++) 
-  if (numero % 2 === 0) {
-    return false
-  } for ( numero = 0 ; numero <= 100 ; numero++);
-   if (numero % 3 === 0) {return true}
+  if (numero % 3 === 0) {
+    return true
+  } 
+  for (var numero = 0 ; numero <= 100 ; numero++) 
+  if (numero % 2 === 0) {return false};
+  
 }
 
 function esVerdadero(valor){
@@ -165,9 +167,12 @@ if (valor == true) {
 function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
-  //Escribe tu código aquí   
-
-  
+  //Escribe tu código aquí 
+ var tabla = [];
+ for (i = 0 ; i <= 10 ; i++)
+  tabla.push (6 * i);{
+    return tabla
+  }
 }
 
 function tieneTresDigitos(numero){
