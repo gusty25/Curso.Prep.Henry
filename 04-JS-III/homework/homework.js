@@ -31,12 +31,10 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código: 
-  var array = [];
-  for (i = 0; i > array.length; i++)
-  var array = array[i] + 1; {
-    return array
-  }
-
+  var arraydos = [];
+  for (i = 0; i < array.length; i++) {
+    arraydos[i] = array[i]+1
+  } return arraydos;
   
 }
 
@@ -65,9 +63,9 @@ function dePalabrasAFrase(palabras) {
   // Devuelve un string donde todas las palabras estén concatenadas
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
-  // Tu código:
- palabras = ["hola" , "bien"]; 
- return palabras[0] + " " + palabras[1];
+  // Tu código: 
+   return palabras.join(" ")
+
 }
 
 
@@ -75,6 +73,9 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  if (array[0] == elemento) {
+    return true
+  } else return false
 }
 
 
@@ -82,6 +83,10 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+  numeros =[1, 3, 4, 5, 6]
+  numeros[0] + [1] + [2] + [3] + [4]; {
+    return numeros
+  }
 }
 
 
